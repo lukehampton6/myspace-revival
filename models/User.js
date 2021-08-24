@@ -23,14 +23,15 @@ const UserSchema = new Schema(
         friends: [
             {
                 type: Schema.Types.ObjectId,
-                ref: "Thought"
+                ref: "User"
             }
         ]
     },
     {
         toJSON: {
             virtuals: true
-        }
+        },
+        id: false
     }
 );
 
