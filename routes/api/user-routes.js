@@ -8,7 +8,7 @@ const {
     addFriend,
     removeFriend
 } = require('../../controllers/user-controller');
-
+console.log(removeFriend);
 router
     .route('/')
     .get(getAllUsers)
